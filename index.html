@@ -10,25 +10,29 @@
 </head>
 <body>
   <header></header>
-  <main>
-    <svg baseProfile="tiny" height="24px" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M18,11h-7.244l1.586-1.586c0.781-0.781,0.781-2.049,0-2.828c-0.781-0.781-2.047-0.781-2.828,0L3.1,13l6.414,6.414  C9.904,19.805,10.416,20,10.928,20s1.023-0.195,1.414-0.586c0.781-0.781,0.781-2.049,0-2.828L10.756,15H18c1.104,0,2-0.896,2-2  C20,11.895,19.104,11,18,11z" />
-    </svg>
+  <main class="flex center column">
+
     <article id="display">
       <section id="tips"></section>
       <section id="pic_wrap" class="flex center">
         <img id="pic" src=""/>
       </section>
     </article>
-    <article id="controls">
-      <section id="buttons">
+
+    <article id="controls" class="flex center column">
+      <div id="special_msg">❤️ Ineke, click here ❤️</div>
+      <!-- <svg fill="white" height="24px" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M18,11h-7.244l1.586-1.586c0.781-0.781,0.781-2.049,0-2.828c-0.781-0.781-2.047-0.781-2.828,0L3.1,13l6.414,6.414  C9.904,19.805,10.416,20,10.928,20s1.023-0.195,1.414-0.586c0.781-0.781,0.781-2.049,0-2.828L10.756,15H18c1.104,0,2-0.896,2-2  C20,11.895,19.104,11,18,11z" />
+      </svg> -->
+      <!-- <section id="buttons">
         <button id="back"></button>
         <button id="play"></button>
         <button id="next"></button>
         <button id="close"></button>
-      </section>
+      </section> -->
       <input type="text" id="txt">
+      <div>After that, you can type any word into the box</div>
     </article>
   </main>
   <footer></footer>
