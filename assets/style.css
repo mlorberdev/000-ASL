@@ -2,12 +2,13 @@
   font-family: modern;
   src: url(./ModernSans-Light.woff);
 }
+
 * {
   margin: 0;
-  font-family:modern;
+  font-family: modern;
 }
 
-body {
+body,main {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,24 +25,29 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .column {
   flex-direction: column;
 }
+
 .row {
-  flex-direction:row;
+  flex-direction: row;
 }
+
 #txt {
-  position:absolute;
-  bottom:15vh;
-  padding:1rem 1.5rem;
+  position: absolute;
+  bottom: 6vh;
+  padding: 1rem 1.5rem;
   border-radius: 1.7rem;
 }
+
 #pic {
-  max-width:calc(min(95vw,400px));
-  margin:5vh 0 0 0;
+  min-width: calc(max(90vw, 450px));
+  margin: 5vh 0 0 0;
 }
+
 #controls {
-  color:white;
+  color: white;
 }
 
 @media screen and (max-width:400px),
@@ -50,12 +56,12 @@ screen and (max-height:650px) {
 }
 
 #special_msg {
-  position:absolute;
-  bottom:10vh;
-  padding:1rem 1.4rem;
+  position: absolute;
+  top: 2vh;
   cursor: pointer;
 }
+
 #mx {
-  position:absolute;
-  bottom:0;
+  position: absolute;
+  bottom: 2vh;
 }
