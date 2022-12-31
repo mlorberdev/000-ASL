@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+}
+
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #111;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+#pic {
+  position:fixed;
+  top:0;
+  width:90vw;
+}
+
+@media screen and (max-width:400px),
+screen and (max-height:650px) {
+
+}
