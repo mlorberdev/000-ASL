@@ -1,5 +1,10 @@
+@font-face {
+  font-family: modern;
+  src: url(./ModernSans-Light.woff);
+}
 * {
   margin: 0;
+  font-family:modern;
 }
 
 body {
@@ -8,7 +13,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #111;
+  background-color: #000;
 }
 
 .flex {
@@ -28,9 +33,12 @@ body {
 #txt {
   position:absolute;
   bottom:15vh;
+  padding:1rem 1.5rem;
+  border-radius: 1.7rem;
 }
 #pic {
-  width:90vw;
+  max-width:calc(min(95vw,400px));
+  margin:5vh 0 0 0;
 }
 #controls {
   color:white;
@@ -44,6 +52,8 @@ screen and (max-height:650px) {
 #special_msg {
   position:absolute;
   bottom:10vh;
+  padding:1rem 1.4rem;
+  cursor: pointer;
 }
 #mx {
   position:absolute;

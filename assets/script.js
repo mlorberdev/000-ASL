@@ -14,14 +14,12 @@
   // SPELL WORD
   document.getElementById("txt").addEventListener("change", function () {
 
-    const txt = document.getElementById("txt"); // TEXT INPUT
-    let v = [...txt.value];
+    // const txt = document.getElementById("txt"); // TEXT INPUT
+    let v = [...this.value.toLowerCase()];
     console.log(v);
 
-    // note, need to cleanup the filenames and take out the asl prefix below
-
-    for (let i = 0; i < v.length; i++) setTimeout(() => { console.log(i,v[i]);  document.getElementById("pic").src = `./assets/images/asl${v[i]}.gif` }, i * 1000 * speed);
-
+    for (let i = 0; i < v.length; i++) setTimeout(() => { console.log(i,v[i]);  document.getElementById("pic").src = `./assets/images/asl${v[i]}.webp` }, i * 1000 * speed);
+    txt.value = "";
   });
 
   // SPEC
@@ -31,9 +29,7 @@
     let v = [...txt];
     console.log(v);
 
-    // note, need to cleanup the filenames and take out the asl prefix below
-
-    for (let i = 0; i < v.length; i++) setTimeout(() => { console.log(i, v[i]); document.getElementById("pic").src = `./assets/images/asl${v[i]}.gif` }, i * 1000 * speed);
+    for (let i = 0; i < v.length; i++) setTimeout(() => { console.log(i, v[i]); document.getElementById("pic").src = `./assets/images/asl${v[i]}.webp` }, i * 1000 * speed);
 
   });
 
