@@ -8,18 +8,20 @@
   const next = document.getElementById("next");
   const close = document.getElementById("close");
   let speed = 1;
+
   // VARS
   const letters = [];
 
   // SPELL WORD
   document.getElementById("txt").addEventListener("change", function () {
 
-    // const txt = document.getElementById("txt"); // TEXT INPUT
-    let v = [...this.value.toLowerCase()];
-    console.log(v);
+    let v = [...this.value.toLowerCase()]; // spread to array; lowercase to match the filenames
 
-    for (let i = 0; i < v.length; i++) setTimeout(() => { console.log(i,v[i]);  document.getElementById("pic").src = `./assets/images/asl${v[i]}.webp` }, i * 1000 * speed);
-    txt.value = "";
+    // for the length of the user input, use speed setting to advance through v
+    for (let i = 0; i < v.length; i++) setTimeout(() => {
+      document.getElementById("pic").src = `./assets/images/asl${v[i]}.webp`
+    }, i * 1000 * speed);
+    txt.value = ""; // clear input
   });
 
   // SPEC
@@ -27,9 +29,8 @@
 
     const txt = "inekeiloveyou"
     let v = [...txt];
-    console.log(v);
 
-    for (let i = 0; i < v.length; i++) setTimeout(() => { console.log(i, v[i]); document.getElementById("pic").src = `./assets/images/asl${v[i]}.webp` }, i * 1000 * speed);
+    for (let i = 0; i < v.length; i++) setTimeout(() => { document.getElementById("pic").src = `./assets/images/asl${v[i]}.webp` }, i * 1000 * speed);
 
   });
 
